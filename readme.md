@@ -109,7 +109,7 @@ The tasks for this challenge are listed below, with the exception of one, all be
 
 Your submission will be evaluated on the following:
 
-- *Code Quality:** Clean, readable, and efficient code.
+- **Code Quality:** Clean, readable, and efficient code.
 - **Functionality:** All tasks are properly completed and the app functions as intended.
 - **Documentation:** Clear comments explaining your thought process and approach.
 - **Bonus Points:** Implementation of additional features, improvements, or innovative solutions.

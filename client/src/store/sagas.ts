@@ -5,6 +5,7 @@ import apolloClient from '../apollo/client';
 import { Action, Actions } from '../types';
 import { SaveTransaction } from '../queries';
 import { navigate } from '../components/NaiveRouter';
+import { eth2Wei } from '../utils';
 
 interface ActionPayload {
   sender: string;
@@ -24,7 +25,7 @@ function* sendTransaction({payload}: Action<ActionPayload>) {
 
   const transaction = {
     to: payload.recipient,
-    value: payload.amount
+    value: eth2Wei(payload.amount)
   };
 
   try {

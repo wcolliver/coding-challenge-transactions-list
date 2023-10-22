@@ -26,7 +26,7 @@ function* sendTransaction() {
 
   const transaction = {
     to: randomAddress(),
-    value: 1000000000000000000,
+    value: BigInt(1000000000000000000),
   };
 
   try {
@@ -54,7 +54,7 @@ function* sendTransaction() {
     });
 
   } catch (error) {
-    //
+    console.error(error);
   }
 
 }

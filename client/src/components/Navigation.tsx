@@ -41,7 +41,7 @@ const Navigation: React.FC = () => {
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
             {wallet && (
               <>
-                <SendTransaction />
+                <SendTransaction senderAddress={wallet.accounts[0].address} />
                 <p className="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border-2 border-gray-200 font-semibold text-gray-200 text-sm">
                   {wallet.accounts[0].address}
                 </p>

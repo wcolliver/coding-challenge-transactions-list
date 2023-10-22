@@ -10,11 +10,15 @@ interface FormData {
   amount: string;
 }
 
-const SendTransaction: React.FC = () => {
+interface Props {
+  senderAddress: string;
+}
+
+const SendTransaction: React.FC<Props> = (props) => {
   const dispatch = useDispatch();
   const { handleSubmit, register } = useForm<FormData>({
     defaultValues: {
-      sender: '',
+      sender: props.senderAddress,
       recipient: '',
       amount: '0'
     }

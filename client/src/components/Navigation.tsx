@@ -37,7 +37,7 @@ const Navigation: React.FC = () => {
         <div className="flex items-center justify-between">
           <a className="flex-none text-xl font-semibold dark:text-white" href=".">Transactions List</a>
         </div>
-        <div className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
+        <div className="hs-collapse overflow-hidden transition-all duration-300 basis-full grow">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
             {wallet && (
               <>
